@@ -1,13 +1,68 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/jvolpe/job_app_repos/colorado_breweries/app/facades/open_brewery_facade.rb": {
+        "lines": [
+          1,
+          1,
+          2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          433,
+          null,
+          1,
+          429,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jvolpe/job_app_repos/colorado_breweries/spec/models/brewery_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          null,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null
+        ]
+      },
       "/Users/jvolpe/job_app_repos/colorado_breweries/app/models/brewery.rb": {
         "lines": [
           1,
           1,
           1,
           null,
-          1,
           1,
           1,
           1,
@@ -24,8 +79,59 @@
           1,
           null
         ]
+      },
+      "/Users/jvolpe/job_app_repos/colorado_breweries/spec/services/open_brewery_service_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jvolpe/job_app_repos/colorado_breweries/app/services/open_brewery_service.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          null,
+          1,
+          4,
+          4,
+          null,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1623707770
+    "timestamp": 1623721048
   }
 }

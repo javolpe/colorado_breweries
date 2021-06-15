@@ -1,0 +1,19 @@
+language: ruby
+rbenv:
+- 2.5.3
+addons:
+  postgresql: 9.6
+cache: bundler
+before_install:
+- gem install bundler:2.1.4
+- nvm install --lts
+
+script:
+- bundle exec rails db:{create,migrate} RAILS_ENV=test
+- bundle exec rspec
+deploy:
+  provider: heroku
+  app: co-breweries
+  on:
+    repo: github/colorado_breweries
+  run: rails db:migrate
