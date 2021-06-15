@@ -1,0 +1,29 @@
+version: 2.1
+orbs:
+  ruby: circleci/ruby@0.1.2 
+  heroku: circleci/heroku@1.2.6
+jobs:
+  build:
+    working_directory: ~/colorado_breweries
+    docker:
+      - image: circleci/ruby:2.5.3
+        environment:
+          PGHOST: localhost
+          PGUSER: colorado_breweries
+          RAILS_ENV: test
+      - image: postgres:13.2
+        environment:
+          POSTGRES_USER: colorado_breweries
+          POSTGRES_DB: colorado_breweries_test
+          POSTGRES_PASSWORD:
+    steps:
+      - checkout
+      - run:
+          name: colorado_breweries
+          command: bundle -v
+      - ruby/bundle-install
+      - checkout
+      - run: gem install bundler
+      - run: bundle install --path vendor/bundle
+      - run: bundle exec rake db:setup
+      - run: bundle exec rspec
