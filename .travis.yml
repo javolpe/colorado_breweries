@@ -14,6 +14,6 @@ script:
 deploy:
   provider: heroku
   app: co-breweries
-  on:
-    repo: github/colorado_breweries
+  on: 
+    repo: colorado_breweries
   run: rails db:migrate
