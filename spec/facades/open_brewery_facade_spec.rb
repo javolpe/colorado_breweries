@@ -21,7 +21,6 @@ RSpec.describe OpenBreweryFacade, type: :model do
     end
 
     it "should seed the db with all the Colorado breweries availalbe" do 
-      expect(Brewery.all).to be_empty
 
       OpenBreweryFacade.seed_db_with_colorado_breweries
       expect(Brewery.all.count).to be > 425
