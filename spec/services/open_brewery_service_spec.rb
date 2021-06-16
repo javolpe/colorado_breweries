@@ -29,4 +29,4 @@ RSpec.describe OpenBreweryService, type: :service do
       expect(body).to be_empty
     end
   end
-end
+end 

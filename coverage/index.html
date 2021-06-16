@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2021-06-14T20:24:46-06:00">2021-06-14T20:24:46-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2021-06-16T13:39:56-06:00">2021-06-16T13:39:56-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  97.88%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         14.95
+         49.07
        </span>
     </span> hits/line
     )
@@ -39,15 +39,15 @@
   <a name="AllFiles"></a>
 
   <div>
-    <b>6</b> files in total.
+    <b>11</b> files in total.
   </div>
 
   <div class="t-line-summary">
-    <b>63</b> relevant lines,
-    <span class="green"><b>63</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>189</b> relevant lines,
+    <span class="green"><b>185</b> lines covered</span> and
+    <span class="red"><b>4</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  97.88%
 </span>
 )
   </div>
@@ -71,13 +71,46 @@
       <tbody>
         
           <tr class="t-file">
+            <td class="strong t-file__name"><a href="#01c9111bdf5428561da238938722c49f3dcd4327" class="src_link" title="app/controllers/api/v1/breweries_controller.rb">app/controllers/api/v1/breweries_controller.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">94.74 %</td>
+            <td class="cell--number">31</td>
+            <td class="cell--number">19</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">7.16</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#9ae33f6d022991a4bf811c8273131f65eda9e5ca" class="src_link" title="app/controllers/application_controller.rb">app/controllers/application_controller.rb</a></td>
+            <td class="red strong cell--number t-file__coverage">76.92 %</td>
+            <td class="cell--number">24</td>
+            <td class="cell--number">13</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">2.00</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#7154861a2c8d1500617b1142af0f1c2d0d485514" class="src_link" title="app/facades/brewery_facade.rb">app/facades/brewery_facade.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">4.20</td>
+            
+          </tr>
+        
+          <tr class="t-file">
             <td class="strong t-file__name"><a href="#becad663cd76055d9ba362d93870ffe2bbb06387" class="src_link" title="app/facades/open_brewery_facade.rb">app/facades/open_brewery_facade.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
             <td class="cell--number">32</td>
             <td class="cell--number">9</td>
             <td class="cell--number">9</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">96.67</td>
+            <td class="cell--number">962.67</td>
             
           </tr>
         
@@ -95,9 +128,20 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#638b558d0a18fd492e82a5cf481b43feeee9bb29" class="src_link" title="app/models/brewery.rb">app/models/brewery.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">20</td>
             <td class="cell--number">12</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">10</td>
+            <td class="cell--number">12</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.67</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#4869abfff7afd89d3c362c0cb47b562ec0ccc518" class="src_link" title="app/serializers/brewery_serializer.rb">app/serializers/brewery_serializer.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">4</td>
+            <td class="cell--number">3</td>
+            <td class="cell--number">3</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -110,7 +154,7 @@
             <td class="cell--number">6</td>
             <td class="cell--number">6</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.50</td>
+            <td class="cell--number">7.00</td>
             
           </tr>
         
@@ -122,6 +166,17 @@
             <td class="cell--number">12</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.75</td>
+            
+          </tr>
+        
+          <tr class="t-file">
+            <td class="strong t-file__name"><a href="#65b7e1f7f2274025838403a520a6fb7a5bcdc499" class="src_link" title="spec/requests/api/v1/breweries/index_spec.rb">spec/requests/api/v1/breweries/index_spec.rb</a></td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">108</td>
+            <td class="cell--number">84</td>
+            <td class="cell--number">84</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">3.75</td>
             
           </tr>
         
@@ -152,6 +207,814 @@
       </div>
 
       <div class="source_files">
+      
+        <div class="source_table" id="01c9111bdf5428561da238938722c49f3dcd4327">
+  <div class="header">
+    <h3>app/controllers/api/v1/breweries_controller.rb</h3>
+    <h4>
+      <span class="green">
+  94.74%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>19</b> relevant lines.
+      <span class="green"><b>18</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class Api::V1::BreweriesController &lt; ApplicationController</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def index</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="3">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    filtered = BreweryFacade.filter_breweries(allowed_filters[:filter_name], allowed_filters[:filter_postal_code], allowed_filters[:filter_city], allowed_filters[:filter_brewery_type])</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="4">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    if filtered.empty?</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby">      render json: { message: &quot;no breweries found matching search criteria&quot; }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">    else </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="7">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">      order_params = make_true_order_params_a_string</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="8">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">      sorted = BreweryFacade.sort_filtered_breweries(filtered, order_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="9">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">      @serial = paginated_response(BrewerySerializer, sorted)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="10">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">      render json: @serial</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="13">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def make_true_order_params_a_string</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="15">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    order_params = &quot;&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="16">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    allowed_sorting.each do |param|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="4" data-linenumber="17">
+            <span class="hits">4</span>
+            
+
+            
+
+            <code class="ruby">      order_params += &quot;#{param.first}, &quot;  if param.second == &quot;true&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="19">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    order_params = order_params[0..-3]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="21">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="22">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def allowed_filters</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="36" data-linenumber="25">
+            <span class="hits">36</span>
+            
+
+            
+
+            <code class="ruby">    name = params.permit(:filter_name, :filter_postal_code, :filter_city, :filter_brewery_type)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="26">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def allowed_sorting</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="29">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">   params.permit(:name, :postal_code, :city, :brewery_type)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="31">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="9ae33f6d022991a4bf811c8273131f65eda9e5ca">
+  <div class="header">
+    <h3>app/controllers/application_controller.rb</h3>
+    <h4>
+      <span class="red">
+  76.92%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>13</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class ApplicationController &lt; ActionController::API</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  rescue_from ActiveRecord::RecordInvalid, with: :render_invalid_record_response</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  rescue_from ActiveRecord::RecordNotFound, with: :render_record_not_found_response</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="5">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def render_invalid_record_response(exception)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="6">
+            
+            
+
+            
+
+            <code class="ruby">    render json: exception.record.errors, status: 404</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def render_record_not_found_response(exception)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">    render json: { error: exception.message }, status: :not_found</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def page </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">    params[:page].to_i &lt; 1 ? @page = 1 : @page = params[:page].to_i  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">  </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="17">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def per_page </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="18">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    params[:per_page].to_i &lt; 1 ? @per_page = 20 : @per_page = params[:per_page].to_i</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def paginated_response(serializer, objects)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="22">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    serializer.new(objects.limit(per_page))</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="23">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="24">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="7154861a2c8d1500617b1142af0f1c2d0d485514">
+  <div class="header">
+    <h3>app/facades/brewery_facade.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>5</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class BreweryFacade </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.filter_breweries(name, postal_code, city, brewery_type)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="3">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    Brewery.filter_brewery_searches(name, postal_code, city, brewery_type)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.sort_filtered_breweries(filtered, order_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="7">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    filtered.order(order_params)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
       
         <div class="source_table" id="becad663cd76055d9ba362d93870ffe2bbb06387">
   <div class="header">
@@ -202,8 +1065,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="2" data-linenumber="3">
-            <span class="hits">2</span>
+          <li class="covered" data-hits="11" data-linenumber="3">
+            <span class="hits">11</span>
             
 
             
@@ -246,8 +1109,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="10" data-linenumber="7">
+            <span class="hits">10</span>
             
 
             
@@ -257,8 +1120,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="10" data-linenumber="8">
+            <span class="hits">10</span>
             
 
             
@@ -268,8 +1131,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="433" data-linenumber="9">
-            <span class="hits">433</span>
+          <li class="covered" data-hits="4330" data-linenumber="9">
+            <span class="hits">4330</span>
             
 
             
@@ -290,8 +1153,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="11">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="10" data-linenumber="11">
+            <span class="hits">10</span>
             
 
             
@@ -301,8 +1164,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="429" data-linenumber="12">
-            <span class="hits">429</span>
+          <li class="covered" data-hits="4290" data-linenumber="12">
+            <span class="hits">4290</span>
             
 
             
@@ -614,8 +1477,8 @@
     
 
     <div class="t-line-summary">
-      <b>10</b> relevant lines.
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>12</b> relevant lines.
+      <span class="green"><b>12</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -754,6 +1617,169 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def self.filter_brewery_searches(name, postal_code, city, brewery_type)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">    Brewery.where(&#39;name ilike ?&#39;, &quot;%#{name}%&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">    .where(&#39;postal_code ilike ?&#39;, &quot;%#{postal_code}%&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">    .where(&#39;city ilike ?&#39;, &quot;%#{city}%&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="17">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    .where(&#39;brewery_type like ?&#39;, &quot;%#{brewery_type}%&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="4869abfff7afd89d3c362c0cb47b562ec0ccc518">
+  <div class="header">
+    <h3>app/serializers/brewery_serializer.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>3</b> relevant lines.
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">class BrewerySerializer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="2">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  include FastJsonapi::ObjectSerializer</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  attributes :name, :brewery_type, :street, :address_2, :address_3, :city, :state, :county_province, :postal_code, :phone, :website_url</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="4">
+            
+            
+
+            
+
             <code class="ruby">end</code>
           </li>
         </div>
@@ -812,8 +1838,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="3">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="13" data-linenumber="3">
+            <span class="hits">13</span>
             
 
             
@@ -856,8 +1882,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="7">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="13" data-linenumber="7">
+            <span class="hits">13</span>
             
 
             
@@ -867,8 +1893,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="4" data-linenumber="8">
-            <span class="hits">4</span>
+          <li class="covered" data-hits="13" data-linenumber="8">
+            <span class="hits">13</span>
             
 
             
@@ -1130,6 +2156,1225 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">end</code>
+          </li>
+        </div>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="65b7e1f7f2274025838403a520a6fb7a5bcdc499">
+  <div class="header">
+    <h3>spec/requests/api/v1/breweries/index_spec.rb</h3>
+    <h4>
+      <span class="green">
+  100.0%
+</span>
+
+      lines covered
+    </h4>
+
+    
+
+    <div class="t-line-summary">
+      <b>84</b> relevant lines.
+      <span class="green"><b>84</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+
+    
+
+  </div>
+
+  <pre>
+    <ol>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="1">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">require &#39;rails_helper&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="2">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="3">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">RSpec.describe &quot;API::V1::Breweries::Index&quot;, type: :request do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="4">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  before :each do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="5">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    Brewery.destroy_all</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="6">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    OpenBreweryFacade.seed_db_with_colorado_breweries</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="7">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="8">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &quot;Happy path&quot; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="9">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can get all breweries, paginated for 20, with no params given&quot; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      get &#39;/api/v1/breweries&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="11">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      body = JSON.parse(response.body, symbolize_names: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response.status).to eq(200)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      check_hash_structure(body, :data, Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="16">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].count).to eq(20)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="18">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can get all breweries with color in name&quot; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="19">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      get &#39;/api/v1/breweries?filter_name=color&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="20">
+            
+            
+
+            
+
+            <code class="ruby">      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="21">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="22">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      body = JSON.parse(response.body, symbolize_names: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="23">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response.status).to eq(200)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="24">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      check_hash_structure(body, :data, Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="25">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].count).to eq(8)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="26">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].all?{|brewery| brewery[:attributes][:name].downcase.include? &quot;color&quot;}).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="27">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="28">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can get all breweries with 802 in the postal_code&quot; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="29">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      get &#39;/api/v1/breweries?filter_postal_code=802&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="30">
+            
+            
+
+            
+
+            <code class="ruby">      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="31">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="32">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      body = JSON.parse(response.body, symbolize_names: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="33">
+            
+            
+
+            
+
+            <code class="ruby">      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response.status).to eq(200)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      check_hash_structure(body, :data, Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="36">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].count).to eq(20)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="21" data-linenumber="37">
+            <span class="hits">21</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].all?{|brewery| brewery[:attributes][:postal_code].downcase.include? &quot;802&quot;}).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="38">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can get all breweries in city of denver&quot; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="40">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      get &#39;/api/v1/breweries?filter_city=denver&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="42">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="43">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      body = JSON.parse(response.body, symbolize_names: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response.status).to eq(200)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="45">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      check_hash_structure(body, :data, Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="46">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].count).to eq(20)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="21" data-linenumber="47">
+            <span class="hits">21</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].all?{|brewery| brewery[:attributes][:city].downcase.include? &quot;denver&quot;}).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="48">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="49">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can get all large breweries&quot; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      get &#39;/api/v1/breweries?filter_brewery_type=large&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="52">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="53">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      body = JSON.parse(response.body, symbolize_names: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="54">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response.status).to eq(200)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="55">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      check_hash_structure(body, :data, Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="56">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].count).to eq(7)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="8" data-linenumber="57">
+            <span class="hits">8</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].all?{|brewery| brewery[:attributes][:brewery_type] == &#39;large&#39;}).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="58">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="59">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can get all micro breweries in denver&quot; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="60">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      get &#39;/api/v1/breweries?filter_brewery_type=micro&amp;filter_city=denver&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="61">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="62">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="63">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      body = JSON.parse(response.body, symbolize_names: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="64">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response.status).to eq(200)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      check_hash_structure(body, :data, Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="66">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].count).to eq(20)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="21" data-linenumber="67">
+            <span class="hits">21</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].all?{|brewery| brewery[:attributes][:brewery_type] == &#39;micro&#39;}).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="21" data-linenumber="68">
+            <span class="hits">21</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].all?{|brewery| brewery[:attributes][:city].downcase.include? &quot;denver&quot;}).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="69">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="70">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can get all micro breweries in denver with brew in their name&quot; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="71">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      get &#39;/api/v1/breweries?filter_brewery_type=micro&amp;filter_city=denver&amp;filter_name=brew&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="72">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="73">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="74">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      body = JSON.parse(response.body, symbolize_names: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="75">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response.status).to eq(200)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="76">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      check_hash_structure(body, :data, Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="77">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].count).to eq(20)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="21" data-linenumber="78">
+            <span class="hits">21</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].all?{|brewery| brewery[:attributes][:brewery_type] == &#39;micro&#39;}).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="21" data-linenumber="79">
+            <span class="hits">21</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].all?{|brewery| brewery[:attributes][:city].downcase.include? &quot;denver&quot;}).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="21" data-linenumber="80">
+            <span class="hits">21</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].all?{|brewery| brewery[:attributes][:name].downcase.include? &quot;brew&quot;}).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="81">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="82">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can get all micro breweries in denver sorted by postal_code&quot; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="83">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      get &#39;/api/v1/breweries?filter_brewery_type=micro&amp;filter_city=denver&amp;postal_code=true&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="84">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="85">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="86">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      body = JSON.parse(response.body, symbolize_names: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="87">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response.status).to eq(200)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="88">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      check_hash_structure(body, :data, Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="89">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].count).to eq(20)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="21" data-linenumber="90">
+            <span class="hits">21</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].all?{|brewery| brewery[:attributes][:brewery_type] == &#39;micro&#39;}).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="21" data-linenumber="91">
+            <span class="hits">21</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].all?{|brewery| brewery[:attributes][:city].downcase.include? &quot;denver&quot;}).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="92">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].first[:attributes][:postal_code].to_i &lt;  body[:data].third[:attributes][:postal_code].to_i).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="93">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="94">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can get all breweries in denver sorted by postal_code and brewery_type&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="95">
+            
+            
+
+            
+
+            <code class="ruby">      #  if two breweries are in the same postal_code they should be sorted by brewery_type</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="96">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      get &#39;/api/v1/breweries?filter_city=denver&amp;postal_code=true&amp;name=true&amp;brewery_type=true&#39;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="97">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="98">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="99">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      body = JSON.parse(response.body, symbolize_names: true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="100">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response.status).to eq(200)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="101">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      check_hash_structure(body, :data, Array)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="102">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].count).to eq(20)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="21" data-linenumber="103">
+            <span class="hits">21</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].all?{|brewery| brewery[:attributes][:city].downcase.include? &quot;denver&quot;}).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="104">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].first[:attributes][:postal_code] ==  body[:data].second[:attributes][:postal_code]).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="105">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(body[:data].first[:attributes][:brewery_type] &lt;  body[:data].second[:attributes][:brewery_type]).to eq(true)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="106">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="107">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="108">
             
             
 
@@ -1518,7 +3763,7 @@
 
             
 
-            <code class="ruby">end</code>
+            <code class="ruby">end </code>
           </li>
         </div>
       
