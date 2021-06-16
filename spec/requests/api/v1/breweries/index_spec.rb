@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "API::V1::Breweries::Index", type: :request do 
   before :each do 
+    Brewery.destroy_all
     OpenBreweryFacade.seed_db_with_colorado_breweries
   end
   describe "Happy path" do 
