@@ -5,7 +5,7 @@ class Api::V1::BreweriesController < ApplicationController
       render json: { message: "no breweries found matching search criteria" }
     else 
       order_params = make_true_order_params_a_string
-      sorted = filtered.order(order_params)
+      sorted = BreweryFacade.sort_filtered_breweries(filtered, order_params)
       @serial = paginated_response(BrewerySerializer, sorted)
       render json: @serial
     end
