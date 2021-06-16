@@ -1,17 +1,31 @@
 class Api::V1::BreweriesController < ApplicationController
   def index
-    filtered = Brewery.where('name ilike ?', "%#{allowed_filters[:name]}%")
-      .where('postal_code ilike ?', "%#{allowed_filters[:postal_code]}%")
-      .where('city ilike ?', "%#{allowed_filters[:city]}%")
-      .where('brewery_type like ?', "%#{allowed_filters[:brewery_type]}%")
-    
-    @serial = paginated_response(BrewerySerializer, filtered)
-    render json: @serial
+    filtered = BreweryFacade.filter_breweries(allowed_filters[:filter_name], allowed_filters[:filter_postal_code], allowed_filters[:filter_city], allowed_filters[:filter_brewery_type])
+    if filtered.empty?
+      render json: { message: "no breweries found matching search criteria" }
+    else 
+      order_params = make_true_order_params_a_string
+      sorted = filtered.order(order_params)
+      @serial = paginated_response(BrewerySerializer, sorted)
+      render json: @serial
+    end
+  end
+
+  def make_true_order_params_a_string
+    order_params = ""
+    allowed_sorting.each do |param|
+      order_params += "#{param.first}, "  if param.second == "true"
+    end
+    order_params = order_params[0..-3]
   end
 
 
   private
   def allowed_filters
-    name = params.permit(:name, :postal_code, :city, :brewery_type)
+    name = params.permit(:filter_name, :filter_postal_code, :filter_city, :filter_brewery_type)
+  end
+
+  def allowed_sorting
+   params.permit(:name, :postal_code, :city, :brewery_type)
   end
 end
