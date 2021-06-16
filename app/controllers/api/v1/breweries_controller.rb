@@ -1,5 +1,6 @@
 class Api::V1::BreweriesController < ApplicationController
   def index
+    SearchFacade.create_unique_searches(allowed_filters, allowed_sorting)
     filtered = BreweryFacade.filter_breweries(allowed_filters[:filter_name], allowed_filters[:filter_postal_code], allowed_filters[:filter_city], allowed_filters[:filter_brewery_type])
     if filtered.empty?
       render json: { message: "no breweries found matching search criteria" }
