@@ -37,6 +37,56 @@
           null
         ]
       },
+      "/Users/jvolpe/job_app_repos/colorado_breweries/spec/facades/search_facade_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/jvolpe/job_app_repos/colorado_breweries/spec/models/brewery_spec.rb": {
         "lines": [
           1,
@@ -53,8 +103,6 @@
           2,
           2,
           2,
-          null,
-          null,
           null,
           null
         ]
@@ -84,6 +132,25 @@
         ]
       },
       "/Users/jvolpe/job_app_repos/colorado_breweries/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/jvolpe/job_app_repos/colorado_breweries/spec/models/search_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/jvolpe/job_app_repos/colorado_breweries/app/models/search.rb": {
         "lines": [
           1,
           1,
@@ -253,10 +320,35 @@
           null
         ]
       },
+      "/Users/jvolpe/job_app_repos/colorado_breweries/app/facades/search_facade.rb": {
+        "lines": [
+          1,
+          1,
+          13,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          13,
+          2,
+          2,
+          null,
+          11,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/jvolpe/job_app_repos/colorado_breweries/app/controllers/api/v1/breweries_controller.rb": {
         "lines": [
           1,
           1,
+          9,
           9,
           9,
           0,
@@ -279,11 +371,11 @@
           null,
           1,
           1,
-          36,
+          45,
           null,
           null,
           1,
-          9,
+          18,
           null,
           null
         ]
@@ -339,6 +431,6 @@
         ]
       }
     },
-    "timestamp": 1623872396
+    "timestamp": 1623882323
   }
 }
