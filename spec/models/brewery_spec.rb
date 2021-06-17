@@ -15,6 +15,7 @@ RSpec.describe Brewery, type: :model do
   end
   describe "Class Methods" do 
     it "should be able to filter breweries by name" do 
+      Brewery.destroy_all
       seed_test_db
       expect(Brewery.all.count).to eq(27)
       name = "alpine dog"
@@ -27,6 +28,7 @@ RSpec.describe Brewery, type: :model do
       expect(results.first.name).to eq("Alpine Dog Brewery")
     end
     it "should be able to filter breweries by postal_code" do 
+      Brewery.destroy_all
       seed_test_db
       expect(Brewery.all.count).to eq(27)
       name = nil
@@ -38,6 +40,7 @@ RSpec.describe Brewery, type: :model do
       expect(results.count).to eq(27)
     end
     it "should not find breweries if no brewery matches" do 
+      Brewery.destroy_all
       seed_test_db
       expect(Brewery.all.count).to eq(27)
       name = "?"
