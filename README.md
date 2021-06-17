@@ -88,14 +88,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 This is the only endpoint but it does do some heavy lifting.  There are currently eight (8) query params that can be added to this GET request.  If no query params are given you will be returned back 20 serialized objects. Additionally all 8 params may be used at once if desired.
 The query params are:
-filter_name: "string"
-filter_postal_code: "string"
-filter_brewery_type: "string"
-filter_city: "string"
-sort_name: boolean
-sort_postal_code: boolean
-sort_brewery_type: boolean
-sort_city: boolean
+* filter_name: "string"
+* filter_postal_code: "string"
+* filter_brewery_type: "string"
+* filter_city: "string"
+* sort_name: boolean
+* sort_postal_code: boolean
+* sort_brewery_type: boolean
+* sort_city: boolean
 
 The filter params will limit the results you get back.  All filter params are cross-referenced with the appropriate database fields as substring and case insesnsitive searches.
 Brewery types are mirco, nano, regional, brewpub, large, planning, bar, contract, propietor, closed.
