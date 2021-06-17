@@ -99,4 +99,34 @@ RSpec.configure do |config|
     expect(object[key]).to be_a(data_type)
   end
 
+  def seed_test_db
+    Brewery.create(db_id: 1, obdb_id: "a_colorado_brewery", name: "A Colorado Brewery", brewery_type: "micro", street: "123 Champa St", city: "Denver", state: "Colorado", postal_code: "80210", phone: "303-123-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 2, obdb_id: "b_colorado_brewery", name: "Alpine Dog Brewery", brewery_type: "large", street: "234 Champa St", city: "Denver", state: "Colorado", postal_code: "80210", phone: "303-124-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 3, obdb_id: "c_colorado_brewery", name: "Baer Brewing", brewery_type: "micro", street: "236 Champa St", city: "Denver", state: "Colorado", postal_code: "80210", phone: "303-125-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 4, obdb_id: "d_colorado_brewery", name: "Zuni St Brewing", brewery_type: "micro", street: "237 Champa St", city: "Denver", state: "Colorado", postal_code: "80210", phone: "303-126-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 5, obdb_id: "e_colorado_brewery", name: "River North Brewery", brewery_type: "micro", street: "231 Champa St", city: "Denver", state: "Colorado", postal_code: "80210", phone: "303-127-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 6, obdb_id: "f_colorado_brewery", name: "Our Mutual Friend", brewery_type: "micro", street: "321 Champa St", city: "Denver", state: "Colorado", postal_code: "80211", phone: "303-128-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 7, obdb_id: "g_colorado_brewery", name: "Epic Colorado Brewing", brewery_type: "micro", street: "987 Champa St", city: "Denver", state: "Colorado", postal_code: "80212", phone: "303-129-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 8, obdb_id: "h_colorado_brewery", name: "Odells Brewery", brewery_type: "micro", street: "965 Champa St", city: "Denver", state: "Colorado", postal_code: "80213", phone: "303-221-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 9, obdb_id: "i_colorado_brewery", name: "Denver Beer CO", brewery_type: "micro", street: "749 Champa St", city: "Denver", state: "Colorado", postal_code: "80213", phone: "303-222-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 10, obdb_id: "j_colorado_brewery", name: "Bierstadt Lagerhaus", brewery_type: "micro", street: "25 Champa St", city: "Denver", state: "Colorado", postal_code: "80213", phone: "303-234-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 11, obdb_id: "k_colorado_brewery", name: "Bruz Beers", brewery_type: "micro", street: "689 Champa St", city: "Denver", state: "Colorado", postal_code: "80213", phone: "303-235-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 12, obdb_id: "l_colorado_brewery", name: "Comrade Brewing Co", brewery_type: "micro", street: "3489 Champa St", city: "Denver", state: "Colorado", postal_code: "80214", phone: "303-269-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 13, obdb_id: "m_colorado_brewery", name: "Fiction Beer Company", brewery_type: "micro", street: "4201 Champa St", city: "Denver", state: "Colorado", postal_code: "80214", phone: "303-248-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 14, obdb_id: "n_colorado_brewery", name: "Hogshead Brewery", brewery_type: "large", street: "9873 Champa St", city: "Denver", state: "Colorado", postal_code: "80214", phone: "303-487-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 15, obdb_id: "o_colorado_brewery", name: "Great Divide Brewing Company", brewery_type: "large", street: "489 Champa St", city: "Denver", state: "Colorado", postal_code: "80214", phone: "303-779-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 16, obdb_id: "p_colorado_brewery", name: "Little Machine Brewhouse", brewery_type: "large", street: "702 Champa St", city: "Denver", state: "Colorado", postal_code: "80214", phone: "303-197-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 17, obdb_id: "q_colorado_brewery", name: "Mockery Brewing", brewery_type: "micro", street: "892 Champa St", city: "Denver", state: "Colorado", postal_code: "80215", phone: "303-104-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 18, obdb_id: "r_colorado_brewery", name: "Oasis Brewing Company", brewery_type: "micro", street: "635 Champa St", city: "Denver", state: "Colorado", postal_code: "80215", phone: "303-578-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 19, obdb_id: "s_colorado_brewery", name: "Prost Brewing Company", brewery_type: "large", street: "645 Champa St", city: "Denver", state: "Colorado", postal_code: "80215", phone: "303-569-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 20, obdb_id: "t_colorado_brewery", name: "Ratio Beerworks", brewery_type: "large", street: "289 Champa St", city: "Denver", state: "Colorado", postal_code: "80215", phone: "303-423-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 21, obdb_id: "u_colorado_brewery", name: "Renegade Brewing Company", brewery_type: "micro", street: "641 Champa St", city: "Denver", state: "Colorado", postal_code: "80215", phone: "303-429-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 22, obdb_id: "v_colorado_brewery", name: "Spangalang Brewery", brewery_type: "large", street: "302 Champa St", city: "Denver", state: "Colorado", postal_code: "80215", phone: "303-205-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 23, obdb_id: "w_colorado_brewery", name: "Wynkoop Brewing Company", brewery_type: "micro", street: "3125 Champa St", city: "Denver", state: "Colorado", postal_code: "80215", phone: "303-264-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 24, obdb_id: "x_colorado_brewery", name: "Station 26 Brewery", brewery_type: "large", street: "487 Champa St", city: "Denver", state: "Colorado", postal_code: "80215", phone: "303-423-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 25, obdb_id: "y_colorado_brewery", name: "Strange Craft Beer Company", brewery_type: "micro", street: "589 Champa St", city: "Denver", state: "Colorado", postal_code: "80215", phone: "303-428-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 26, obdb_id: "z_colorado_brewery", name: "Tivoli Brewing Company", brewery_type: "large", street: "563 Champa St", city: "Denver", state: "Colorado", postal_code: "80215", phone: "303-521-4567", website_url: "www.google.com" )
+    Brewery.create(db_id: 27, obdb_id: "za_colorado_brewery", name: "Woods Boss Brewing", brewery_type: "micro", street: "487 Champa St", city: "Denver", state: "Colorado", postal_code: "80215", phone: "303-527-4567", website_url: "www.google.com" )
+  end
+
 end
