@@ -15,8 +15,8 @@ RSpec.describe Brewery, type: :model do
   end
   describe "Class Methods" do 
     it "should be able to filter breweries by name" do 
-      OpenBreweryFacade.seed_db_with_colorado_breweries
-      expect(Brewery.all.count).to eq(429)
+      seed_test_db
+      expect(Brewery.all.count).to eq(27)
       name = "alpine dog"
       postal_code = nil
       city = nil
@@ -24,22 +24,22 @@ RSpec.describe Brewery, type: :model do
       results = Brewery.filter_brewery_searches(name, postal_code, city, brewery_type)
       
       expect(results.count).to eq(1)
-      expect(results.first.name).to eq("Alpine Dog Brewing Co")
+      expect(results.first.name).to eq("Alpine Dog Brewery")
     end
     it "should be able to filter breweries by postal_code" do 
-      OpenBreweryFacade.seed_db_with_colorado_breweries
-      expect(Brewery.all.count).to eq(429)
+      seed_test_db
+      expect(Brewery.all.count).to eq(27)
       name = nil
       postal_code = "8021"
       city = nil
       brewery_type = nil
       results = Brewery.filter_brewery_searches(name, postal_code, city, brewery_type)
       
-      expect(results.count).to eq(38)
+      expect(results.count).to eq(27)
     end
     it "should not find breweries if no brewery matches" do 
-      OpenBreweryFacade.seed_db_with_colorado_breweries
-      expect(Brewery.all.count).to eq(429)
+      seed_test_db
+      expect(Brewery.all.count).to eq(27)
       name = "?"
       postal_code = nil
       city = nil
