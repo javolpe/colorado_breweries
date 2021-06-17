@@ -41,10 +41,10 @@ ActiveRecord::Schema.define(version: 2021_06_16_195649) do
     t.string "filter_postal_code"
     t.string "filter_city"
     t.string "filter_brewery_type"
-    t.string "name"
-    t.string "postal_code"
-    t.string "city"
-    t.string "brewery_type"
+    t.string "sort_name"
+    t.string "sort_postal_code"
+    t.string "sort_city"
+    t.string "sort_brewery_type"
     t.integer "counter", default: 1
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

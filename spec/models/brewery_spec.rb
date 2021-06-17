@@ -13,4 +13,43 @@ RSpec.describe Brewery, type: :model do
     it { should validate_presence_of :state }
     it { should validate_presence_of :postal_code }
   end
+  describe "Class Methods" do 
+    it "should be able to filter breweries by name" do 
+      Brewery.destroy_all
+      seed_test_db
+      expect(Brewery.all.count).to eq(27)
+      name = "alpine dog"
+      postal_code = nil
+      city = nil
+      brewery_type = nil
+      results = Brewery.filter_brewery_searches(name, postal_code, city, brewery_type)
+      
+      expect(results.count).to eq(1)
+      expect(results.first.name).to eq("Alpine Dog Brewery")
+    end
+    it "should be able to filter breweries by postal_code" do 
+      Brewery.destroy_all
+      seed_test_db
+      expect(Brewery.all.count).to eq(27)
+      name = nil
+      postal_code = "8021"
+      city = nil
+      brewery_type = nil
+      results = Brewery.filter_brewery_searches(name, postal_code, city, brewery_type)
+      
+      expect(results.count).to eq(27)
+    end
+    it "should not find breweries if no brewery matches" do 
+      Brewery.destroy_all
+      seed_test_db
+      expect(Brewery.all.count).to eq(27)
+      name = "?"
+      postal_code = nil
+      city = nil
+      brewery_type = nil
+      results = Brewery.filter_brewery_searches(name, postal_code, city, brewery_type)
+      
+      expect(results.count).to eq(0)
+    end
+  end
 end
