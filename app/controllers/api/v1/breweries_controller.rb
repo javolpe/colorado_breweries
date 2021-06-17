@@ -5,19 +5,10 @@ class Api::V1::BreweriesController < ApplicationController
     if filtered.empty?
       render json: { message: "no breweries found matching search criteria" }
     else 
-      order_params = make_true_order_params_a_string
-      sorted = BreweryFacade.sort_filtered_breweries(filtered, order_params)
+      sorted = BreweryFacade.sort_filtered_breweries(filtered, allowed_sorting)
       @serial = paginated_response(BrewerySerializer, sorted)
       render json: @serial
     end
-  end
-
-  def make_true_order_params_a_string
-    order_params = ""
-    allowed_sorting.each do |param|
-      order_params += "#{param.first}, "  if param.second == "true"
-    end
-    order_params = order_params[0..-3]
   end
 
 
@@ -27,6 +18,6 @@ class Api::V1::BreweriesController < ApplicationController
   end
 
   def allowed_sorting
-   params.permit(:name, :postal_code, :city, :brewery_type)
+   params.permit(:sort_name, :sort_postal_code, :sort_city, :sort_brewery_type)
   end
 end

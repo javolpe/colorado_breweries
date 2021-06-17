@@ -4,17 +4,22 @@ class SearchFacade
                      filter_postal_code: filters[:filter_postal_code],
                      filter_city: filters[:filter_city],
                      filter_brewery_type: filters[:filter_brewery_type],
-                     name: sorters[:name],
-                     postal_code: sorters[:postal_code],
-                     city: sorters[:city],
-                     brewery_type: sorters[:brewery_type]
+                     sort_name: sorters[:sort_name],
+                     sort_postal_code: sorters[:sort_postal_code],
+                     sort_city: sorters[:sort_city],
+                     sort_brewery_type: sorters[:sort_brewery_type]
                     }
-
-    if search_record = Search.find_by(search_params)
+      
+      downcase_params = {} 
+      search_params.each do |key, value|
+        downcase_params[key] = value.downcase if value.present?
+      end
+      
+    if search_record = Search.find_by(downcase_params)
       search_record.counter += 1
       search_record.save
     else  
-      Search.create(search_params)
+      Search.create(downcase_params)
     end
   end
 end
