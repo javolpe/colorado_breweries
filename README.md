@@ -130,3 +130,7 @@ for example: `bundle exec rspec spec/requests/api/vi/breweries/index_spec.rb`
 ### Roadmap
 Future iterations I would love to start with adding in authentication to be able to track searches as they relate to a user.  Seeing the types of searches a user makes is crucially important to seeing what the user cares about, how often they use the app, and even what time of day they routinely make searches.  All of that data is INVALUABLE information to improving our app and user experience.
 
+
+#### Credits
+OpenBreweryDB for building such a cool API.  The link to their repo is [OpenBrewery Github](https://github.com/openbrewerydb/openbrewerydb) and they did great work.
+Turing School of Software and Design.  Too many individuals to list out and thank but they are a fantastic program and I would recommend them to anyone who is sufficiently motivated to learn web development and willing to put in the work.
