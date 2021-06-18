@@ -1,30 +1,28 @@
 # README
 # colorado-breweries
 
-This is a Ruby on Rails API only API to search for breweries in the state of Colorado.  The data I am using is sourced from `https://www.openbrewerydb.org/`, a free open API that has brewery info for the United States.  Per their documentation most of the data is from Summer 2018 so it will likely be a little out of date but for demonstration purposes it will suffice.  I have set my app's database up to only hold databases's in Colorado because I live in Colorado.
+This is a Ruby on Rails API only API to search for breweries in the state of Colorado.  The data I am using is sourced from `https://www.openbrewerydb.org/`, a free open API that has brewery info for the United States.  Per their documentation most of the data is from Summer 2018 so it will likely be a little out of date but for demonstration purposes it will suffice.  I have set my app's database up to only hold breweries's in Colorado because I live in Colorado.
 
-This app does utilize CircleCI for CI/CD purposes to run the test suite on every Pull Requests from Github.  If the tests pass on CircleCI then the app is automatically deployed to Heroku to be live on the internet.
+This app does utilize CircleCI for CI/CD purposes to run the test suite on every Pull Request from Github.  If the tests pass on CircleCI then the app is automatically deployed to Heroku to be live on the internet.
 
-This is the backend engine fueling Hitch, a web application that connects users to similar routes and can help get vehicles off the road. The application is built with service oriented architecture and this app does most of the heavy lifting (see [Project Architecture](#project-architecture)). The backend communicates with the frontend using 5 API JSON endpoints. It stores all our information in our databases.
-
-The API endpoints allow other apps to store Users, Ridedays, Rides, Vehciles, and Friends.  There is functionality on the backend to find matching routes requests all the zipcodes near your specific destination/origin and grabs users with matching routes in those specific areas. 
 
 
 ### Created by:
 - [Jake Volpe](https://github.com/javolpe) | [LinkedIn](https://www.linkedin.com/in/jake-volpe-bb602b126/)
 
 ### Base URL
-[co-breweries](https://co-breweries.herokuapp.com)
+https://co-breweries.herokuapp.com
 
 
 #### Built With
 * [Ruby on Rails](https://rubyonrails.org)
 * [postgresql](https://www.postgresql.org/)
-* [rspec](https://rspec.info/)
+
 
 This project was tested with:
 * RSpec version 3.10
-* [Postman](https://www.postman.com/) Explore and test the API endpoints using Postman, and use Postman’s CLI to execute collections directly from the command-line.
+* * [rspec](https://rspec.info/)
+* [Postman](https://www.postman.com/) Explore and test the API endpoint using Postman.
 
 ## Contents
 - [Getting Started](#getting-started)
@@ -39,7 +37,7 @@ This project was tested with:
 
 ### Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system. Endpoints can be added. If you plan to use this engine with the frontend web application, if the endpoints are changed subsequent updates will be necessary on the Frontend repository code.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system. Endpoints can be added. 
 
 #### Prerequisites
 
@@ -76,7 +74,7 @@ These instructions will get you a copy of the project up and running on your loc
 4. Set up Environment Variables:
   No environment variables are required as OpenBrewery does not require an API Key
 
-  The seeds file will reach out to the API and seed your database with all breweries in Colorado from OpenBrewery.  The tests utilize a collection of handmade mock Brewery objects that are located in spec_helper.  They are just for testing purposes and do not reflect real world data accurately. If you would like to use the real world simply go into the test files and change the neccessary lines to use the method in the seeds file vs the method in spec_helper.
+  The seeds file will reach out to the API and seed your database with all breweries in Colorado from OpenBrewery.  The tests utilize a collection of handmade mock Brewery objects that are located in spec_helper.  They are just for testing purposes and do not reflect real world data accurately. If you would like to use the real world simply go into the test files and change the neccessary lines to use the method in the seeds file vs the method in spec_helper.  I did not use FactoryBot for my mock data because I just wanted more control of my mock objects and did not require that many of them.
 
 ### Endpoints
 | HTTP verbs | Paths  | Used for |
@@ -105,6 +103,7 @@ The sort params are envisioned as check_boxes on the front end so if checked the
 
 ### Pagination
 Pagination is set up to default to the first 20 objects found after filtering.  It is set up to handle sad path scenarios of a user inputing strings or symbols in which case page will be default set to 1 and per_page will be set to 20. The query params for pagination are:
+
 * page: integer
 * per_page: integer
 
