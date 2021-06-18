@@ -107,6 +107,13 @@ The sort params are envisioned as check_boxes on the front end so if checked the
 The first step in the controller action for finding breweries is to record unique searches.  I debated heavily on whether or not to create an endpoint to expose the searches table but decided against as I felt that data shouldn't be exposed via API but rather as an admin pulling that data on a set schedule behind the scenes.  The searches table will only save unique requests based on params inputed to the above GET endpoint but if a request has the exact same param types and values as a previous request, a counter on that search record will be incremented by one.  My thinking here is that if a search is very popular and the same query params/values are being searched for that is also telling us data we want to track.
 
 
+### Example Request in Postman
+![Request](https://i.ibb.co/cgqPnCB/postman-request.png)
+
+
+### Example Response in Postman
+![Response](https://i.ibb.co/fH42BKR/postman-response.png)
+
 
 ### Database Schema
 ![colorado-breweries](https://i.ibb.co/KFSsPdh/co-breweries-db.png)
