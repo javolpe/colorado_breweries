@@ -83,7 +83,7 @@ These instructions will get you a copy of the project up and running on your loc
 | ---------- | ------ | --------:|
 | GET | /api/v1/breweries | Returns back serialized brewery objects, filtered and sorted based on the search. |
 
-[co-breweries](https://co-breweries.herokuapp.com)
+https://co-breweries.herokuapp.com - base URL
 
 
 This is the only endpoint but it does do some heavy lifting.  There are currently eight (8) query params that can be added to this GET request.  If no query params are given you will be returned back 20 serialized objects. Additionally all 8 params may be used at once if desired.
@@ -109,8 +109,7 @@ The first step in the controller action for finding breweries is to record uniqu
 
 
 ### Database Schema
-![colorado-breweries](https://ibb.co/nzt1G9m.png)
-
+![colorado-breweries](https://i.ibb.co/nzt1G9m/co-breweries-db.png)
 
 
 ### Testing
