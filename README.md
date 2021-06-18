@@ -103,6 +103,13 @@ To connect the front end there would be 4 text input fields where the user can e
 
 The sort params are envisioned as check_boxes on the front end so if checked the value received by the Back End would be "true" (i.e. `sort_name: "true"`).  If more than one sort param is selected then they are sorted together (i.e. if sort_brewery_type and sort_postal_code are both selected, breweries in the same zip code will be orderd by brewery_type).
 
+### Pagination
+Pagination is set up to default to the first 20 objects found after filtering.  It is set up to handle sad path scenarios of a user inputing strings or symbols in which case page will be default set to 1 and per_page will be set to 20. The query params for pagination are:
+* page: integer
+* per_page: integer
+
+If no query param is given it will default to page 1 and per_page of 20 just as it will for sad path inputs
+
 ### Searches Table
 The first step in the controller action for finding breweries is to record unique searches.  I debated heavily on whether or not to create an endpoint to expose the searches table but decided against as I felt that data shouldn't be exposed via API but rather as an admin pulling that data on a set schedule behind the scenes.  The searches table will only save unique requests based on params inputed to the above GET endpoint but if a request has the exact same param types and values as a previous request, a counter on that search record will be incremented by one.  My thinking here is that if a search is very popular and the same query params/values are being searched for that is also telling us data we want to track.
 
