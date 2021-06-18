@@ -109,7 +109,7 @@ The first step in the controller action for finding breweries is to record uniqu
 
 
 ### Database Schema
-[colorado-breweries]
+![colorado-breweries](https://ibb.co/nzt1G9m)
 
 
 
