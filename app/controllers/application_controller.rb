@@ -19,6 +19,10 @@ class ApplicationController < ActionController::API
   end
 
   def paginated_response(serializer, objects)
-    serializer.new(objects.limit(per_page))
+    if page == 1
+      serializer.new(objects.limit(per_page))
+    else
+      serializer.new(objects.limit(per_page).offset((page - 1) * per_page))
+    end
   end
 end
