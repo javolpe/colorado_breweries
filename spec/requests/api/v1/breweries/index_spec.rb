@@ -15,6 +15,25 @@ RSpec.describe "API::V1::Breweries::Index", type: :request do
       check_hash_structure(body, :data, Array)
       expect(body[:data].count).to eq(20)
     end
+    it "can get all breweries, paginated for 10" do 
+      get '/api/v1/breweries?per_page=10'
+
+      expect(response).to be_successful
+      body = JSON.parse(response.body, symbolize_names: true)
+      expect(response.status).to eq(200)
+      check_hash_structure(body, :data, Array)
+      expect(body[:data].count).to eq(10)
+    end
+    it "can get breweries 6-10 if paginated properly" do 
+      get '/api/v1/breweries?per_page=5&page=2'
+
+      expect(response).to be_successful
+      body = JSON.parse(response.body, symbolize_names: true)
+      expect(response.status).to eq(200)
+      check_hash_structure(body, :data, Array)
+      expect(body[:data].first[:attributes][:name]).to eq("Our Mutual Friend")
+      expect(body[:data].count).to eq(5)
+    end
     it "can get all breweries with color in name" do 
       get '/api/v1/breweries?filter_name=color'
       
@@ -44,6 +63,16 @@ RSpec.describe "API::V1::Breweries::Index", type: :request do
       expect(response.status).to eq(200)
       check_hash_structure(body, :data, Array)
       expect(body[:data].count).to eq(20)
+      expect(body[:data].all?{|brewery| brewery[:attributes][:city].downcase.include? "denver"}).to eq(true)
+    end
+    it "can get all breweries in city of denver paginated for 7" do 
+      get '/api/v1/breweries?filter_city=denver&per_page=7'
+
+      expect(response).to be_successful
+      body = JSON.parse(response.body, symbolize_names: true)
+      expect(response.status).to eq(200)
+      check_hash_structure(body, :data, Array)
+      expect(body[:data].count).to eq(7)
       expect(body[:data].all?{|brewery| brewery[:attributes][:city].downcase.include? "denver"}).to eq(true)
     end
     it "can get all large breweries" do 
@@ -162,6 +191,24 @@ RSpec.describe "API::V1::Breweries::Index", type: :request do
       expect(response.status).to eq(200)
       
       expect(body[:message]).to eq("no breweries found matching search criteria")
+    end
+    it "does default pagination if given bad page params" do 
+      get '/api/v1/breweries?page=cat'
+
+      expect(response).to be_successful
+      body = JSON.parse(response.body, symbolize_names: true)
+      expect(response.status).to eq(200)
+      check_hash_structure(body, :data, Array)
+      expect(body[:data].count).to eq(20)
+    end
+    it "does default pagination if given bad per_page params" do 
+      get '/api/v1/breweries?per_page=?!@!'
+
+      expect(response).to be_successful
+      body = JSON.parse(response.body, symbolize_names: true)
+      expect(response.status).to eq(200)
+      check_hash_structure(body, :data, Array)
+      expect(body[:data].count).to eq(20)
     end
   end
 end
